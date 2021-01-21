@@ -1,0 +1,64 @@
+.header {
+  @include size(100%, 56px);
+  background-color: #f6fbff;
+  box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    margin-left: 31px;
+  }
+}
+
+.header-right-panel {
+  display: flex;
+  align-items: center;
+  margin-right: 49px;
+
+  &__search {
+    padding: 8px 100px 8px 31px;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: rgba(171, 171, 171, 0.1);
+    margin-right: 55px;
+    @include placeholder {
+      text-indent: 0px;
+      transition: text-indent 300ms;
+    }
+
+    &:focus {
+      @include placeholder {
+        text-indent: 500px;
+      }
+    }
+    // &:before {
+    //   width: 22px;
+    //   height: 22px;
+    //   content: "?";
+    //   display: block;
+    //   z-index: 2;
+    // }
+  }
+
+  &__user-name {
+    font-family: "SF Compact Display";
+    font-size: 20px;
+    color: #1f3b51;
+    margin-right: 21px;
+    display: flex;
+
+    &:before {
+      @include size(22px, 22px);
+      content: "";
+      display: block;
+      margin-right: 5px;
+      background: url("../images/user.svg") no-repeat center center;
+    }
+  }
+
+  &__sign {
+    color: #0091ff;
+    font-size: 20px;
+  }
+}
