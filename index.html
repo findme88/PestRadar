@@ -17,20 +17,44 @@
     <![endif]-->
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
-      <div class="header__logo">
+      <a href="#" class="header__logo">
         <img src="/images/logo2.svg" alt="logo" />
-      </div>
+      </a>
       <div class="header-right-panel">
         <input
           type="search"
           class="header-right-panel__search"
           placeholder="Search"
         />
-
         <div class="header-right-panel__user-name">Astarta Company</div>
         <a class="header-right-panel__sign" href="#">Log out</a>
       </div>
     </header>
+
+    <!-- NAVIGATION -->
+    <main>
+      <nav class="navigation">
+        <ul>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Dashboard</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="#"
+              >Events</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Modules</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Settings</a>
+          </li>
+        </ul>
+
+        <a href="#" class="support">Support</a>
+      </nav>
+    </main>
   </body>
 </html>

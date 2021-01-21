@@ -204,6 +204,68 @@ body, html {
 .header-right-panel__sign {
   color: #0091ff;
   font-size: 20px;
+  font-family: "SF Pro Text - Regular", sans-serif;
+}
+
+.header-right-panel__sign:hover {
+  color: #01508d;
+}
+
+.navigation {
+  max-width: 260px;
+  min-height: 100vh;
+  background-color: #14234f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation__item {
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 20px 38px;
+  border-bottom: solid 1px rgba(225, 225, 225, 0.2);
+}
+
+.navigation__link {
+  color: #ffffff;
+  opacity: 0.8;
+  font-family: "SF Pro Text - Regular", sans-serif;
+}
+
+.navigation__link:hover {
+  opacity: 1;
+}
+
+.navigation__link--active {
+  opacity: 1;
+  font-family: Helvetica;
+  font-weight: 700;
+}
+
+.support {
+  color: #ffffff;
+  font-family: "SF Pro Text - Regular", sans-serif;
+  font-weight: 500;
+  margin: 18px 61px;
+  position: relative;
+}
+
+.support:before {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../images/tel_support.svg");
+  left: -20px;
 }
 
 @font-face {
