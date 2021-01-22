@@ -267,6 +267,10 @@ body, html {
   position: relative;
 }
 
+.support:hover {
+  opacity: .8;
+}
+
 .support:before {
   width: 16px;
   height: 16px;
@@ -402,6 +406,12 @@ body, html {
 
 .flip__page-number {
   margin: 0 14px;
+  color: #697c8a;
+}
+
+.flip__page-number:hover {
+  opacity: .8;
+  color: #000;
 }
 
 .flip__page-number--current {
@@ -422,6 +432,10 @@ body, html {
           justify-content: center;
 }
 
+.flip__page-number--current:hover {
+  opacity: .8;
+}
+
 .export-button {
   position: absolute;
   right: 60px;
@@ -433,6 +447,10 @@ body, html {
   border-radius: 2px;
   font-size: 17px;
   font-weight: 500;
+}
+
+.export-button:hover {
+  opacity: .8;
 }
 
 .export-button::before {

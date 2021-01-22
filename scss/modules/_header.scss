@@ -115,6 +115,10 @@
   margin: 18px 61px;
   position: relative;
 
+  &:hover {
+    opacity: .8;
+  }
+
   &:before {
     @include size(16px, 16px);
     position: absolute;
@@ -244,6 +248,11 @@
 
   &__page-number {
     margin: 0 14px;
+    color: #697c8a;
+    &:hover {
+      opacity: .8;
+      color: #000;
+    }
 
     &--current {
       width: 28px;
@@ -255,6 +264,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &:hover {
+        opacity: .8;
+      }
     }
   }
 }
@@ -270,6 +283,10 @@
   border-radius: 2px;
   font-size: 17px;
   font-weight: 500;
+
+  &:hover {
+    opacity: .8;
+  }
 
   &::before {
     content: "";
