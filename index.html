@@ -18,6 +18,7 @@
   </head>
   <body>
     <!-- HEADER -->
+
     <header class="header">
       <a href="#" class="header__logo">
         <img src="images/logo2.svg" alt="logo" />
@@ -28,13 +29,14 @@
           class="header-right-panel__search"
           placeholder="Search"
         />
-        <div class="header-right-panel__user-name">Astarta Company</div>
+        <a href="#" class="header-right-panel__user-name">Astarta Company</a>
         <a class="header-right-panel__sign" href="#">Log out</a>
       </div>
     </header>
 
     <!-- NAVIGATION -->
-    <main>
+
+    <main class="main">
       <nav class="navigation">
         <ul>
           <li class="navigation__item">
@@ -52,9 +54,98 @@
             <a class="navigation__link" href="#">Settings</a>
           </li>
         </ul>
-
         <a href="#" class="support">Support</a>
       </nav>
+
+      <!-- TABLE -->
+
+      <section class="section-table">
+        <table class="table">
+          <tr class="table__row">
+            <th class="table__header"><input type="checkbox" /></th>
+            <th class="table__header">Location</th>
+            <th class="table__header">Date and time</th>
+            <th class="table__header">Event</th>
+            <th class="table__header">Videos</th>
+            <th class="table__header">Source</th>
+            <th class="table__header">Tags</th>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data"><input type="checkbox" /></td>
+            <td class="table__data">Warehouse Astarta 1</td>
+            <td class="table__data">12/09/2020 14:55:34</td>
+            <td class="table__data">
+              <img class="table__img" src="images/alarm.svg" alt="alarm" />
+            </td>
+            <td class="table__data">2/2</td>
+            <td class="table__data">Module 1</td>
+            <td class="table__data">
+              <span class="table__warning highlighted">Fire</span>
+              <span class="table__warning">Animals</span>
+              <span class="table__warning">Human</span>
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data"><input type="checkbox" /></td>
+            <td class="table__data">Warehouse Astarta 2</td>
+            <td class="table__data">12/09/2020 14:55:34</td>
+            <td class="table__data">
+              <img
+                class="table__img"
+                src="images/temperature.svg"
+                alt="temperature"
+              />
+            </td>
+            <td class="table__data">2/2</td>
+            <td class="table__data">Module 12</td>
+            <td class="table__data">
+              <span class="table__warning">Insects</span>
+              <span class="table__warning">Bird</span>
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data"><input type="checkbox" /></td>
+            <td class="table__data">Warehouse Astarta 3</td>
+            <td class="table__data">12/09/2020 14:55:35</td>
+            <td class="table__data">
+              <img class="table__img" src="images/water.svg" alt="water" />
+            </td>
+            <td class="table__data">1/2</td>
+            <td class="table__data">Module 123</td>
+            <td class="table__data">
+              <span class="table__warning">Insects</span>
+              <span class="table__warning">Human</span>
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data"><input type="checkbox" /></td>
+            <td class="table__data">Warehouse Astarta 4</td>
+            <td class="table__data">12/09/2020 14:55:36</td>
+            <td class="table__data">
+              <img class="table__img" src="images/fire.svg" alt="fire" />
+            </td>
+            <td class="table__data">2/2</td>
+            <td class="table__data">Module 1234</td>
+            <td class="table__data">
+              <span class="table__warning">Insects</span>
+              <span class="table__warning">Animals</span>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="flip">
+        <span class="flip__name">Page</span>
+        <img class="flip__img" src="images/prev_page.svg" alt="arrow" />
+        <a href="#" class="flip__page-number flip__page-number--current">1</a>
+        <a href="#" class="flip__page-number">2</a>
+        <a href="#" class="flip__page-number">3</a>
+        <span class="flip__dots">...</span>
+        <a href="#" class="flip__page-number">1276</a>
+        <img class="flip__img" src="images/next_page.svg" alt="arrow" />
+      </section>
+
+      <button class="export-button">Export</button>
     </main>
   </body>
 </html>
